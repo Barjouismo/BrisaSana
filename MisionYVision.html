@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+     <style>
+.uno{
+    background-color:#ffffff
+    grid-area: uno;
+    }
+ .dos{
+    grid-area: dos;
+  background-color: #ffffff;
+ }
+ #Mision{
+   width:565.9px;
+   height:493.9px;
+    background-color: #b6dfef;
+    position: relative;
+    
+ }
+ #Vision{
+    width:565.9px;
+    height:492.8;
+    background-color:#d1304d;
+ }
+ .tres{
+    grid-area: tres;
+ background-color: #ffffff;
+ }
+ body{
+    display: grid;
+    grid-template-rows: 200px 650px 250px ;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "uno uno"
+    "dos dos"
+    "tres tres"
+    ;
+    padding: 35px;
+ }
+ @media (max-width:700px) {
+   body{
+ display: grid;
+    grid-template-rows: 300px 800px 300px ;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-areas: 
+    "uno uno uno "
+    "dos dos dos"
+    "tres cuatro cinco"
+    ;
+   }
+  
+ }
+ </style>
+</head>
+<body>
+     <header class="uno">1</header>
+    <nav class="dos">2</nav>
+    <footer class="tres">3</footer>
+    <div id="Mision"></div>
+    <div id="Vision"></div>
+</body>
+</html>
