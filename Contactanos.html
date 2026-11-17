@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://typekit.net">
     <style>
 
         header{            
             align-items: center;
+            align-content: center;
         }
         
         nav{
@@ -16,11 +24,15 @@
             gap: 20px;
             border: 2px solid rgb(209 48 77);
             background-color: rgb(255, 255, 255);
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding: 20px;
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
             border-radius: 60px;
             width: 1000px;
+            margin: 0 auto;
         }
+
 
         a{
             background-color: rgb(255, 255, 255);
@@ -30,14 +42,75 @@
             color: rgb(209 48 77);
             text-decoration: none;
             width: 150px;
-            font-size: 20px;
+            font-size: 25px;
             justify-content: center;
             justify-items: center;
+            font-family: 'Passion One', sans-serif;
+            text-align: center;
+        }
+
+
+        a:hover{
+            background-color: rgb(209 48 77);
+            color: rgb(255, 255, 255);
+            size: 10px;
+            transform: scale(1.1);
         }
 
         body{
             background: linear-gradient(110deg,rgb(32, 110, 166), rgb(184, 225, 241));
         }
+
+        .contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 505px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 225, 241);
+    border: 1px solid rgb(32, 110, 166);
+    border-radius: 60px;
+    padding: 10px;
+    height: 80px;
+}
+
+.icono {
+    background-color: rgb(32, 110, 166);
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.informacion {
+    margin-left: 15px;
+}
+
+.informacion h2 {
+    color: rgb(32, 110, 166);
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    font-family: 'cocomat-pro', sans-serif;
+    font-weight: 700;
+}
+
+.informacion p {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    font-family: 'cocomat-pro', sans-serif;
+    font-weight: 700;
+}
 
 
         footer{
@@ -60,8 +133,36 @@
 <body>
 
     <h1>Contactanos</h1>
-    <div class="telf"></div>
-    <div class="correo"></div>
+    
+    <div class="contenedor">
+
+    <div class="caja">
+        <div class="icono">📞</div>
+        <div class="informacion">
+            <h2>TELÉFONO</h2>
+            <p>+591 60771477</p>
+        </div>
+    </div>
+
+    <div class="caja">
+        <div class="icono">✉</div>
+        <div class="informacion">
+            <h2>CORREO</h2>
+            <p>barjou@pedropoveda.edu.bo</p>
+        </div>
+    </div>
+
+    <div class="caja">
+        <div class="icono">📍</div>
+        <div class="informacion">
+            <h2>DIRECCIÓN</h2>
+            <p>Colegio Pedro Poveda, CBBA - Bolivia</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="correo"></div>
     <div class="direc"></div>
     <div class="form">
         <form action="">
