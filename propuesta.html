@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{ 
+            background-color:rgb(171, 177, 255);
+            grid-area: A;
+        }
+        nav{
+            background-color:rgb(146, 152, 238);
+            grid-area: B;
+        }
+        #tom{
+            background-color:rgb(129, 135, 224);
+            grid-area:C;
+        }
+       
+        
+        body{
+            display:grid;
+            grid-template-rows: 150px 250px 200px 150px;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-areas: 
+            "A A A A A"
+            "C C C C C"
+            "B B B B B";
+           
+ 
+        }
+        @media(max-width: 700px){
+            header{
+                background-color: rgb(171, 177, 255);
+                
+            }
+            nav{
+                background-color: rgb(146, 152, 238);
+            }
+            body{
+                display: grid;
+                grid-template-rows:100px 100px 100px 100px 100px;
+                grid-template-columns: 33% 33% 33%;
+                grid-template-areas: 
+                "A A A"
+                "C C C"
+                "D D D";
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>1</header>
+    <nav>2</nav>
+    <aside>8</aside>
+    <section id="tom">3</section>
+    <section id="ho">4</section>
+    <section id="ll">5</section>
+    <section id="a">6</section>
+    <section id="nd">7</section>
+    <footer>9</footer>
+</body>
+</html>
