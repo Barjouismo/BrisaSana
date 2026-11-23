@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
     <style>
                                         /*MENÚ*/
         header{            
-            align-items: center;
-            align-content: center;
             grid-area: cero;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 30px;
         }
 
         nav{
@@ -61,18 +68,31 @@
             background: linear-gradient(110deg,rgb(32, 110, 166), rgb(184, 225, 241));
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: 500px 500px;
+            grid-template-rows: 150px auto auto;
             grid-template-areas:
             "cero cero"
-            "uno dos";
+            "we dos"
+            "uno dos"
+            "tre tre";
         }
         /* INFORMACIÓN */
+
+        h1{
+            font-family: 'Passion One', sans-serif;
+            font-size: 130px;
+            color: white;
+            margin-left: 180px;
+            grid-area: we;
+            margin-bottom: 0px;
+            margin-top: 15px;
+        }
+
         .contenedor {
             grid-area: uno;
+            display: flex;
             flex-direction: column;
             gap: 15px;
-            width: 505px;
-            margin-left: 100px;
+            margin-left: 200px;
         }
 
         .caja {
@@ -80,31 +100,31 @@
             align-items: center;
             background-color: rgb(184, 225, 241);
             border: 1px solid rgb(32, 110, 166);
-            border-radius: 60px;
+            border-radius: 70px;
             padding: 10px;
-            height: 100px;
-            width: 600px;
+            height: 110px;
+            width: 700px;
         }
 
         .icono {
             background-color: rgb(32, 110, 166);
             color: white;
-            width: 75px;
-            height: 75px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 35px;
+            font-size: 55px;
         }
 
         .informacion {
-            margin-left: 15px;
+            margin-left: 15px;  
         }
 
         .informacion h2 {
             color: rgb(32, 110, 166);
-            font-size: 40px;;
+            font-size: 50px;
             font-weight: normal;
             margin: 0;
             font-family: 'cocomat-pro', sans-serif;
@@ -113,7 +133,7 @@
 
         .informacion p {
             color: white;
-            font-size: 27px;;
+            font-size: 31px;
             margin: 0;
             font-family: 'cocomat-pro', sans-serif;
             font-weight: 700;
@@ -122,11 +142,64 @@
         /* FORMULARIO */
         .form{
             grid-area: dos;
+            background-color: white;
+            border-radius: 60px;
+            padding: 20px;
+            margin-top: 15px;
+            margin-right: 150px;
+            width: 557px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-family: "DM Serif Display", serif;
+            font-weight: 700;
+            color:  rgb(32, 110, 166);
+            font-size: 25px;
+        }
+
+        input{
+            width: 550px;
+            border: 1px solid rgb(160,195,220);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 50px;
+        }
+
+        textarea{
+            width: 550px;
+            border: 1px solid rgb(160,195,220);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .enviar{
+            background-color: rgb(32, 110, 166);
+            color: rgb(255, 255, 255);
+            font-family: "DM Serif Display", serif;
+            width: 560px;
+            
+        }
+
+        .enviar:hover{
+            background-color: rgb(184, 225, 241);
+            color: rgb(32, 110, 166);
+            size: 10px;
         }
 
 /* PIE DE PÁGINA */
         footer{
             background-color: rgb(209 48 77);
+            font-family: "DM Serif Display", serif;
+            grid-area: tre;
+            padding: 30px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
         }
 
     </style>
@@ -144,13 +217,11 @@
 
 <body>
 
+<h1>CONTÁCTANOS</h1>
 
-
-<div class="contenedor">
-    <h1>Contactanos</h1>
-    
+<div class="contenedor">    
     <div class="caja">
-        <div class="icono">📞</div>
+        <div class="icono">☎</div>
         <div class="informacion">
             <h2>TELÉFONO</h2>
             <p>+591 60771477</p>
@@ -166,16 +237,16 @@
     </div>
 
     <div class="caja">
-        <div class="icono">📍</div>
+        <div class="icono">♟</div>
         <div class="informacion">
             <h2>DIRECCIÓN</h2>
             <p>Colegio Pedro Poveda, CBBA - Bolivia</p>
         </div>
     </div>
 
-    </div>
+</div>
 
-    <div class="form">
+<div class="form">
         <form action="">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre">
@@ -186,11 +257,15 @@
             <label for="mensaje">Mensaje:</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <br>
-            <input type="submit" value="Enviar">
+            <input class="enviar" type="submit" value="Enviar">
         </form>
     </div>
 </body>
 <footer>
-
+<p class="icono">✚</p>
+<p class="informacion">
+<p class="enf">Enfermería</p><br>
+<p class="pp">Colegio Pedro Poveda</p>
+</p>
 </footer>
 </html>
