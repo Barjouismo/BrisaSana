@@ -64,11 +64,15 @@
             transform: scale(1.1);
         }
         /* BODY */
+        
        body{
             background: linear-gradient(110deg,rgb(32, 110, 166), rgb(184, 225, 241));
             display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 150px auto auto;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            grid-template-columns: auto auto;
+            grid-template-rows: 150px auto auto auto;
             grid-template-areas:
             "cero cero"
             "we dos"
@@ -124,7 +128,7 @@
 
         .informacion h2 {
             color: rgb(32, 110, 166);
-            font-size: 50px;
+            font-size: 40px;
             font-weight: normal;
             margin: 0;
             font-family: 'cocomat-pro', sans-serif;
@@ -197,9 +201,41 @@
             font-family: "DM Serif Display", serif;
             grid-area: tre;
             padding: 30px;
-            margin-top: 30px;
+            margin-top: 103px;
             display: flex;
             align-items: center;
+            border-radius: 30px 30px 0 0;
+            height: 50px;
+        }
+
+        .logo{
+            background-color: white;
+            border-radius: 70px;
+            width: 230px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color:rgb(32, 110, 166);
+        }
+
+        .cruz{
+            background-color: rgb(255, 255, 255);
+            color: rgb(209, 48, 77);
+            border: 2px solid rgb(32, 110, 166);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-right: 12px;
+        }
+
+        .pp{
+            display: block;
+            color:rgb(184, 225, 241);
         }
 
     </style>
@@ -208,10 +244,10 @@
 <header>
 <nav>
     <a href="index.html">Inicio</a>
-    <a href="productos.html">Misión y Visión</a>
-    <a href="nosotros.html">Nosotros</a>
+    <a href="MisionYVision.html">Misión y Visión</a>
+    <a href="SobreNosotros.html">Nosotros</a>
     <a href="servicios.html">Equipamiento</a>
-    <a href="contactanos.html">Contactanos</a>
+    <a href="Contactanos.html">Contáctanos</a>
 </nav>
 </header>
 
@@ -246,26 +282,33 @@
 
 </div>
 
-<div class="form">
+|   <div class="form">
         <form action="">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" required>
             <br>
             <label for="correo">Correo:</label>
-            <input type="email" name="correo" id="correo">
+            <input type="email" name="correo" id="correo" required>
             <br>
             <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder=":3" required></textarea>
             <br>
             <input class="enviar" type="submit" value="Enviar">
+            <br>
+
+            </div>
         </form>
     </div>
-</body>
+
 <footer>
-<p class="icono">✚</p>
-<p class="informacion">
-<p class="enf">Enfermería</p><br>
-<p class="pp">Colegio Pedro Poveda</p>
-</p>
+    <div class="logo">
+    <p class="cruz">✚</p>
+        <p class="bs">
+        Enfermería
+            <span class="pp">Colegio Pedro Poveda</span>
+        </p>
+    </div> 
 </footer>
+
+</body>
 </html>
