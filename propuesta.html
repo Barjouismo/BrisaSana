@@ -1,65 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Propuesta</title>
     <style>
-        header{ 
-            background-color:rgb(171, 177, 255);
+        header {
+            background-color: #fffdf8;
             grid-area: A;
+            color: #286b9e;
+            font-size: 65px;
+            font-weight: bold;
+            padding: 20px;
         }
-        nav{
-            background-color:rgb(146, 152, 238);
+        nav {
+            background-color: #8bbbd5;
             grid-area: B;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            line-height: 1.5;
+            border-radius: 20px;
         }
-        #tom{
-            background-color:rgb(129, 135, 224);
-            grid-area:C;
+        #tom {
+            background-color: #fffdf8;
+            grid-area: C;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
         }
-       
-        
-        body{
-            display:grid;
-            grid-template-rows: 150px 250px 200px 150px;
-            grid-template-columns: 20% 20% 20% 20%;
-            grid-template-areas: 
-            "A A A A A"
-            "C C C C C"
-            "B B B B B";
-           
- 
+
+        aside {
+            background-color: #fffdf8;
+            grid-area: D;
+            padding: 10px;
+            text-align: center;
         }
-        @media(max-width: 700px){
-            header{
-                background-color: rgb(171, 177, 255);
-                
-            }
-            nav{
-                background-color: rgb(146, 152, 238);
-            }
-            body{
+        #ho {
+            background-color: #fffdf8;
+            grid-area: E;
+            padding: 10px;
+            text-align: center;
+        }
+        #ll {
+            background-color: #fffdf8;
+            grid-area: F;
+        }
+        #a {
+            background-color: #fffdf8;
+            grid-area: G;
+        }
+        #nd {
+            background-color: #fffdf8;
+            grid-area: H;
+        }
+
+        footer {
+            background-color: #fffdf8;
+            grid-area: I;
+        }
+        body {
+            display: grid;
+            grid-template-rows: 150px 200px 100px 150px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas:
+                "A A D D"
+                "B B D D"
+                "C C E E"
+                "I I I I";
+            background-color: #8bbbd5;
+            padding: 25px;
+            gap: 10px;
+        }
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+        @media(max-width: 700px) {
+            body {
                 display: grid;
-                grid-template-rows:100px 100px 100px 100px 100px;
-                grid-template-columns: 33% 33% 33%;
-                grid-template-areas: 
-                "A A A"
-                "C C C"
-                "D D D";
+                grid-template-rows: 100px 180px 180px 150px;
+                grid-template-columns: 100%;
+                grid-template-areas:
+                    "A"
+                    "B"
+                    "D"
+                    "C";
+            }
+
+            header {
+                font-size: 45px;
+            }
+            img {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
-
 </head>
 <body>
-    <header>1</header>
-    <nav>2</nav>
-    <aside>8</aside>
-    <section id="tom">3</section>
-    <section id="ho">4</section>
-    <section id="ll">5</section>
-    <section id="a">6</section>
-    <section id="nd">7</section>
-    <footer>9</footer>
+    <header>
+        PROPUESTA
+    </header>
+    <nav>
+        El proyecto propone la mejora integral del área de
+        enfermería garantizando la atención inmediata y
+        profesional ante emergencias escolares, además
+        de promover hábitos de prevención, autocuidado
+        y bioseguridad entre estudiantes del Colegio
+        Pedro Poveda.
+    </nav>
+    <aside>
+        <img src="kk1.jpg" alt="Atención de enfermería">
+    </aside>
+    <section id="tom"></section>
+    <section id="ho">
+        <img src="kk2.jpg" alt="Material de enfermería">
+    </section>
+    <section id="ll"></section>
+    <section id="a"></section>
+    <section id="nd"></section>
+    <footer></footer>
 </body>
 </html>
