@@ -86,73 +86,7 @@
             align-items: center;
             justify-content: center;
         }
-        .forma {
-            position: absolute;
-            background-color: #8ab5d0;
-            z-index: 0;
-        }
-        .forma.uno {
-            width: 190px;
-            height: 300px;
-            top: 35px;
-            left: 18%;
-            border-radius: 55% 35% 45% 30%;
-            transform: rotate(18deg);
-        }
-        .forma.dos {
-            width: 180px;
-            height: 270px;
-            right: 12%;
-            bottom: 10px;
-            border-radius: 45% 50% 35% 45%;
-            transform: rotate(18deg);
-        }
-        .foto {
-            position: absolute;
-            border-radius: 50%;
-            object-fit: cover;
-            z-index: 1;
-        }
-        .foto.superior {
-            width: 260px;
-            height: 260px;
-            top: 0;
-            left: 5%;
-        }
-
-        .foto.inferior {
-            width: 195px;
-            height: 195px;
-            right: 5%;
-            bottom: 0;
-        }
-        .play {
-            position: absolute;
-            z-index: 2;
-            width: 66px;
-            height: 66px;
-            border-radius: 50%;
-            background: rgba(20, 25, 35, 0.72);
-            display: grid;
-            place-items: center;
-        }
-        .play::after {
-            content: "";
-            margin-left: 5px;
-            width: 0;
-            height: 0;
-            border-top: 17px solid transparent;
-            border-bottom: 17px solid transparent;
-            border-left: 23px solid white;
-        }
-        .play.superior {
-            top: 97px;
-            left: calc(5% + 97px);
-        }
-        .play.inferior {
-            right: calc(5% + 64px);
-            bottom: 64px;
-        }
+       
         @media (max-width: 760px) {
             .contenido {
                 grid-template-columns: 1fr;
@@ -194,13 +128,10 @@
                 </p>
             </div>
             <div class="visual">
-                <div class="forma uno"></div>
-                <div class="forma dos"></div>
-                <img src=".jpg" class="foto superior"
-                     alt="Atención de enfermería">
+                <img src="kk.jpg" alt="Atención de enfermería">
                 <span class="play superior"></span>
-                <img src="enfermeria2.jpg" class="foto inferior" alt="Personal de enfermería">
-                <span class="play inferior"></span>
+                <img src="enfermeria2.jpg"alt="Personal de enfermería">
+
             </div>
         </section>
     </main>
