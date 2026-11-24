@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
      <style>
 .uno{
-    background-color:#ffffff
     grid-area: uno;
+    background-color: #ffffff;
+    
     }
  .dos{
     grid-area: dos;
   background-color: #ffffff;
  }
  #Mision{
-   width:565.9px;
-   height:493.9px;
+   width:800px;
+   height:800px;
     background-color: #b6dfef;
     position: relative;
+    left:90px;
+    bottom:100px;
+    border-radius:40px;
+
     
  }
  #Vision{
-    width:565.9px;
-    height:492.8;
+    width:800px;
+    height:800px;
     background-color:#d1304d;
+    position: relative;
+    left:50px;
+    bottom:100px;
+    border-radius: 40px;
  }
  .tres{
     grid-area: tres;
@@ -32,14 +44,13 @@
  }
  body{
     display: grid;
-    grid-template-rows: 200px 650px 250px ;
+    grid-template-rows: 150px 650px 150px ;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "uno uno"
     "dos dos"
     "tres tres"
     ;
-    padding: 35px;
  }
  @media (max-width:700px) {
    body{
@@ -57,10 +68,17 @@
  </style>
 </head>
 <body>
-     <header class="uno">1</header>
-    <nav class="dos">2</nav>
-    <footer class="tres">3</footer>
-    <div id="Mision"></div>
-    <div id="Vision"></div>
+   <header class="uno">1
+   <nav class="dos">2
+   <a href="index.html">Inicio</a>
+    <a href="productos.html">Misión y Visión</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Equipamiento</a>
+    <a href="MisionYVision.html"></a>
+   </nav>
+   </header>
+   <footer class="tres">3</footer>
+    <div id="Mision"><h2>MISIÓN</h2><p>Ayudar a los estudiantes dentro de las instalaciones del colegio ante cualquier inconveniente que pueda surgir, con el material completo y neccesario</p></div>
+    <div id="Vision"><h2>VISIÓN</h2><p>Lograr la confianza de los estudiantes de todos los niveles como enfermería del colegio para que puedan sentirse seguros de acudir a nosotros ante cualquier inconveniente por nuestro amplio y completo material</p></div>
 </body>
 </html>
