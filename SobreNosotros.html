@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing:border-box;
+        }
         header{
         align-items: center;
         align-content: center;
         grid-area: uno;
-              background-color:#fffbf6;
-               border-radius: 28px 28px 28px 28px;
+        background-color:#fffbf6;
+        border-radius: 28px 28px 28px 28px;
         }
         .uno{
             display: flex;
@@ -39,19 +42,56 @@
             font-family: 'Passion One', sans-serif;
             text-align: center;
         }
-        body{
+body{
     display: grid;
-    grid-template-rows: 200px 650px 250px ;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "uno uno"
-    "dos dos"
-    "tres tres"
-    ;
+    font-family:Arial, sans-serif;
     padding: 35px;
     background: linear-gradient(110deg,#d1304d,#FFFFFF);
- }
-   </style>
+    }
+.dos{
+    background-color: #fffbf6;
+    border-radius: 35px;
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 200px 650px 250px;
+    grid-template-rows: 15% 70% 15%;
+
+    grid-template-areas:
+        "menu menu"
+        "imagen contenido"
+        "frase frase";
+
+    gap: 20px;
+    align-items: center;
+}
+.uno{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 2px solid rgb(209, 48, 77);
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    background-color: white;
+    border-radius: 80px;
+    border: 2px solid rgb(209, 48, 77);
+    padding: 12px;
+    color: rgb(209, 48, 77);
+    text-decoration: none;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+    </style>
 <body>
     <header>
         <nav class="uno">
@@ -64,15 +104,24 @@
 
 
         </nav>
-
-</header>
-<nav class="IwI"></nav>
-    <nav class="dos"><p class="UnU">SOBRE <br> NOSOTROS</p></nav>
-    <footer class="tres">La Unidad Educativa Pedro Poveda cuenta con una enfermeria equipada<p class="UwU"></p>
-      <img src="">
+<div class="imagen" >
+    <img src="imagendeenfermeriaseguramente.jpg">
+</div>
+<div class="contenido">
+    <h1 class="titulo">
+        SOBRE<br>
+        NOSOTROS
+    </h1>
+<p class="descripcion">
+    El proyecto busca impulsar la salud escolar,
+    implementando un área de enfermería equipada,
+    promoviendo el autocuidado en los estudiantes
+    y promover la bioseguridad y el bienestar en
+    el Colegio Pedro Poveda.
+</p>
+<footer class="tres">
+    La Unidad Educativa Pedro Poveda cuenta con una enfermería equipada.
 </footer>
-    </header>
-    <nav class="dos"></nav>
-
+</div>
 </body>
 </html>
