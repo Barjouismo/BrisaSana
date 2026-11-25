@@ -11,6 +11,78 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exile&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
     <style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 40px;
+    align-items: center;              
+  }
+  .logo-brisa img {
+    width: 100%;
+    max-width: 520px;
+    display: block;
+    margin: 0 auto;
+  }
+  .lema {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 22px;
+    color: #5aa9d6;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .video-caja {
+    border: 3px solid #e0455f;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000;
+  }
+  .video-caja video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .barra {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    padding: 6px 8px;
+    border-top: 3px solid #e0455f;
+  }
+  .barra button {
+    background: none;
+    border: none;
+    color: #e0455f;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 2px 8px;
+  }
+  .progreso {
+    flex: 1;
+    height: 10px;
+    background: #f3d4d9;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .progreso span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #e0455f;
+    transition: width .3s;
+  }
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+  }
+
+
+
+
+
+
 header{            
             align-items: center;
             align-content: center;
@@ -36,6 +108,8 @@ header{
         }
 
 
+
+
         a{
             background-color: rgb(255, 255, 255);
             border-radius: 60px;
@@ -50,6 +124,8 @@ header{
             font-family: 'Passion One', sans-serif;
             text-align: center;
         }
+
+
 
 
         a:hover{
@@ -75,21 +151,42 @@ header{
  border-radius: 0px 0px 28px 28px;
  }
  .UwU{
-    font-size: 50px;
-    padding: 60px;
-
+    font-size: 25px;
+    padding: 80px;
+    color: #206ea6;
+    position: relative;
+    left: 180px;
  }
  .UnU{
 font-family: "Exile", system-ui;
 font-size: 200px;
 color: #d1304d;
 position: relative;
-bottom: 100px;
+bottom: 280px;
+left: 100px;
+ }
+ .OwO{
+    position: relative;
+bottom: 260px;
 left: 150px;
+ }
+ .Logo{
+    position: relative;
+    left: 1480px ;
+    bottom: 90px ;
+ }
+ .Jaz{
+    position: relative;
+    left: 80px;
+ }
+ .Mali{
+    position: relative;
+    bottom: 1000px;
+    left: 800px;
  }
  body{
     display: grid;
-    grid-template-rows: 200px 650px 250px ;
+    grid-template-rows: 200px 320px 250px ;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "uno uno"
@@ -97,7 +194,7 @@ left: 150px;
     "tres tres"
     ;
     padding: 35px;
-    background: linear-gradient(110deg,rgb(32, 110, 166), rgb(184, 225, 241));
+    background: linear-gradient(rgb(32, 110, 166), rgb(184, 225, 241));
  }
  @media (max-width:700px) {
    body{
@@ -117,17 +214,50 @@ left: 150px;
 <body>
    <header>
 <nav class="uno">
-    <a href="index.html">Inicio</a>
-    <a href="productos.html">Misión y Visión</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="servicios.html">Equipamiento</a>
+    <a href="MaquetacionBorrador.html">Inicio</a>
+    <a href="MisionYVision.html">Misión y Visión</a>
+    <a href="SobreNosotros.html">Nosotros</a>
+    <a href=".html">Equipamiento</a>
     <a href="contactanos.html">Contactanos</a>
 </nav>
+<img src="https://cdn.phototourl.com/anon/2026-11-23-4282c887-c0d8-47e1-883a-86aea79a5843.png" class="Logo">
 </header>
 <nav class="IwI"></nav>
-    <nav class="dos"><p class="UnU">BRISA <br>SANA</p></nav>
-    <footer class="tres"><p class="UwU">Cuidar, prevenir y acompañar es <br>nuestra forma de enseñar</p>
-      <img src="">
+    <nav class="dos"><p class="UnU">BRISA <br>SANA</p>
+        <nav class="Mali">
+   <script>
+  const video = document.getElementById('miVideo');
+  const barra = document.getElementById('barraProgreso');
+
+
+  function retroceder() { video.currentTime = Math.max(0, video.currentTime - 5); }
+  function avanzar()   { video.currentTime = Math.min(video.duration, video.currentTime + 5); }
+
+
+  video.addEventListener('timeupdate', () => {
+    if (video.duration) {
+      barra.style.width = (video.currentTime / video.duration) * 100 + '%';
+    }
+  });
+</script>
+    
+    <section class="hero">
+  <div class="video-caja">
+    <video id="miVideo" controls poster="https://cdn.phototourl.com/anon/2026-11-24-3f28d8c5-2c33-4bc8-97f9-e432dad4282d.jpg">
+  <source src="enfermeria-pedro-poveda.mp4" type="video/mp4">
+</video>
+    <div class="barra">
+      <button onclick="retroceder()">&#10094;</button>
+      <div class="progreso"><span id="barraProgreso"></span></div>
+      <button onclick="avanzar()">&#10095;</button>
+    </div>
+  </div>
+
+
+</section>
+    </nav>
+    </nav>
+    <footer class="tres"><p class="UwU">Cuidar, prevenir y acompañar es <br class="Jaz">nuestra forma de enseñar</p>
 </footer>
 </body>
 </html>
