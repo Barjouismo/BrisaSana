@@ -8,14 +8,14 @@
         * {
             box-sizing:border-box;
         }
-        header{
+header{
         align-items: center;
         align-content: center;
         grid-area: uno;
         background-color:#fffbf6;
         border-radius: 28px 28px 28px 28px;
         }
-        .uno{
+.uno{
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -28,7 +28,7 @@
             border-radius: 20px;
             margin:0 auto;
         }
-        a{
+a{
             background-color: rgb(255, 255, 255);
             border-radius: 80px;
             border: 2px solid rgb(209 48 77);
@@ -55,7 +55,7 @@ body{
 
     display: grid;
 
-    grid-template-columns: 200px 650px 250px;
+    grid-template-columns: 45% 50%;
     grid-template-rows: 15% 70% 15%;
 
     grid-template-areas:
@@ -91,22 +91,65 @@ a{
     font-size: 20px;
     text-align: center;
 }
+a:hover {
+    background-color: rgb(209, 48, 77);
+    color: white;
+    transform: scale(1.05);
+}
+.contenido {
+            grid-area: contenido;
+        }
+
+.titulo {
+            color: #d1304d;
+            font-size: 75px;
+            font-weight: 900;
+            line-height: 1.05;
+            margin: 0 auto;
+        }
+.descripcion {
+            background-color: #f2c1ca;
+            border-radius: 30px;
+            padding: 18px 15px;
+            color: #1682bd;
+            font-size: 21px;
+            text-align: justify;
+            margin: 0;
+        }
+.tres {
+            grid-area: frase;
+            background-color: #fffdf5;
+            padding: 20px 10px;
+            text-align: center;
+            color: #d1304d;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
     </style>
+    </head>
 <body>
-    <header>
-        <nav class="uno">
+    <main class="dos">
+
+<nav class="uno">
     <a href="index.html">Inicio</a>
-    <a href="productos.html">Misión y Visión</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="servicios.html">Equipamiento</a>
-    <a href="contactanos.html">Contactanos</a>
+    <a href="MisionYVision.html">Misión y Visión</a>
+    <a href="SobreNosotros.html">Sobre Nosotros</a>
+    <a href="propuesta.html">Propuesta</a>
+    <a href="Contactanos.html">Contactanos</a>
+</nav>
 
-
-
-        </nav>
 <div class="imagen" >
-    <img src="imagendeenfermeriaseguramente.jpg">
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHb4Z5vNFw/I-fL3gDK5UwtmrfQ7jw-JQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+    </iframe>
 </div>
+
+</div>
+
 <div class="contenido">
     <h1 class="titulo">
         SOBRE<br>
@@ -119,9 +162,12 @@ a{
     y promover la bioseguridad y el bienestar en
     el Colegio Pedro Poveda.
 </p>
+</div>
+
 <footer class="tres">
     La Unidad Educativa Pedro Poveda cuenta con una enfermería equipada.
 </footer>
-</div>
+
+    </main>
 </body>
 </html>
