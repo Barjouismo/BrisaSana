@@ -7,51 +7,172 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Gravitas+One&display=swap" rel="stylesheet">
      <style>
-.uno{
-    grid-area: uno;
-    background-color: #ffffff;
-    
-    }
- .dos{
-    grid-area: dos;
-  background-color: #ffffff;
- }
+      /* Menú */ 
+      header{            
+            align-items: center;
+            align-content: center;
+            grid-area: uno;
+            background-color:#ffffff;
+        }
+        
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border: 2px solid rgb(209 48 77);
+            background-color: rgb(255, 255, 255);
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 60px;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+
+        a{
+            background-color: rgb(255, 255, 255);
+            border-radius: 60px;
+            border: 2px solid rgb(209 48 77);
+            padding:15px;
+            color: rgb(209 48 77);
+            text-decoration: none;
+            width: 150px;
+            font-size: 25px;
+            justify-content: center;
+            justify-items: center;
+            font-family: 'Passion One', sans-serif;
+            text-align: center;
+        }
+
+
+        a:hover{
+            background-color: rgb(209 48 77);
+            color: rgb(255, 255, 255);
+            size: 10px;
+            transform: scale(1.1);
+            transition: 0.3s;
+            position: relative;
+            bottom: 7px;
+        }
+ 
+        /* Body */
  #Mision{
    width:800px;
-   height:800px;
+   height:680px;
     background-color: #b6dfef;
     position: relative;
     left:90px;
-    bottom:100px;
+    top:20px;
     border-radius:40px;
 
     
  }
  #Vision{
     width:800px;
-    height:800px;
+    height:680px;
     background-color:#d1304d;
     position: relative;
-    left:50px;
-    bottom:100px;
+    right:900px;
+    top:120px;
     border-radius: 40px;
  }
  .tres{
     grid-area: tres;
  background-color: #ffffff;
  }
+
  body{
     display: grid;
-    grid-template-rows: 150px 650px 150px ;
+    grid-template-rows: 100px 350px 100px ;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "uno uno"
-    "dos dos"
     "tres tres"
     ;
  }
+  #M{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:20ex;
+      color:#206ea6;
+      padding-left:60px;
+      margin-top:40px;
+  }
+  #V{
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size:20ex;
+   color:#ffffff;
+   padding-left:60px;
+   margin-top:40px;
+  }
+  .pe{
+   font-family:"Gravitas One", serif;
+   font-size:13mm;
+   color:#ffffff;
+   padding-left:15px;
+   padding-top:1px;
+   position:relative;
+   bottom:20px;
+  }
+  .parrafo{
+   font-family: "Gravitas One", serif;
+   font-size:13mm;
+   color:#ffffff;
+   padding-left:20px;
+   position:relative;
+   bottom:100px;
+  }
+  footer{
+            background-color: rgb(209 48 77);
+            font-family: "DM Serif Display", serif;
+            grid-area: tre;
+            padding: 30px;
+            margin-top: 103px;
+            display: flex;
+            align-items: center;
+            border-radius: 30px 30px 0 0;
+            height: 50px;
+            width: 1852px;
+            position:relative;
+            right:1912px;
+            top:177px;
+        }
+        .logo{
+            background-color: white;
+            border-radius: 70px;
+            width: 230px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color:rgb(32, 110, 166);
+        }
+        .cruz{
+            background-color: rgb(255, 255, 255);
+            color: rgb(209, 48, 77);
+            border: 2px solid rgb(32, 110, 166);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-right: 12px;
+        }
+        .pp{
+            display: block;
+            color:rgb(184, 225, 241);
+        }
+
  @media (max-width:700px) {
    body{
  display: grid;
@@ -64,21 +185,34 @@
     ;
    }
   
- }
+   }
+
  </style>
 </head>
-<body>
-   <header class="uno">1
-   <nav class="dos">2
+
+   <header>
+   <nav>
    <a href="index.html">Inicio</a>
     <a href="productos.html">Misión y Visión</a>
     <a href="nosotros.html">Nosotros</a>
     <a href="servicios.html">Equipamiento</a>
-    <a href="MisionYVision.html"></a>
+    <a href="MisionYVision.html">Contactanos</a>
    </nav>
    </header>
-   <footer class="tres">3</footer>
-    <div id="Mision"><h2>MISIÓN</h2><p>Ayudar a los estudiantes dentro de las instalaciones del colegio ante cualquier inconveniente que pueda surgir, con el material completo y neccesario</p></div>
-    <div id="Vision"><h2>VISIÓN</h2><p>Lograr la confianza de los estudiantes de todos los niveles como enfermería del colegio para que puedan sentirse seguros de acudir a nosotros ante cualquier inconveniente por nuestro amplio y completo material</p></div>
-</body>
+
+<body>
+
+   <div class="contenedor">3</div>
+      <div id="Vision"><h2 id="V">VISIÓN</h2><p class="parrafo">Lograr la confianza de los estudiantes de todos los niveles como enfermería del colegio para que puedan sentirse seguros de acudir a nosotros ante cualquier inconveniente por nuestro amplio y completo material</p></div>
+      <div id="Mision"><h2 id="M">MISIÓN</h2><p class="pe">Ayudar a los estudiantes dentro de las instalaciones del colegio ante cualquier inconveniente que pueda surgir, con el material completo y neccesario</p></div>
+      <footer>
+    <div class="logo">
+    <p class="cruz">✚</p>
+        <p class="bs">
+        Enfermería
+            <span class="pp">Colegio Pedro Poveda</span>
+        </p>
+    </div> 
+</footer>
+   </body>
 </html>
