@@ -1,1 +1,148 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+
+    <style>
+        body {
+            background-color: #9bcde1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .blanco {
+            background-color: #fffdf8;
+            width: 1780px;
+            height: 850px;
+            border-radius: 30px;
+        }
+
+        header h1 {
+            color: #c83250;
+            font-size: 75px;
+            font-weight: 900;
+            text-align: center;
+        }
+        .inventario {
+            display: flex;
+            gap: 22px;
+            padding: 0 15px;
+        }
+        .tarjeta {
+            width: 33.33%;
+            text-align: center;
+        }
+        .tarjeta img {
+            width: 560px;
+            height: 360px;
+            border-radius: 15px;
+            border: 2px solid #375a68;
+        }
+       
+        h2{
+            color: #395e74;
+            font-size: 35px;
+        }
+        .tarjeta button {
+            background-color: #d12e50;
+            color: white;
+            border-radius: 30px;
+            width: 500px;
+            height: 70px;
+            font-size: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .tarjeta button:hover {
+            background-color: #941934;
+            transform: scale(1.05);
+        }
+        @media (max-width: 750px) {
+
+            .blanco {
+                padding: 25px 20px;
+                height: 1860px;
+            }
+            .inventario {
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+
+            .tarjeta {
+                width: 100px;
+                height: 560px;
+                margin-bottom: 25px;
+                position: relative;
+                right: 230px;
+                bottom: 95px;
+            }
+h2{
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 170px;
+}
+button{
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                position: relative;
+                bottom: 10px;
+                left: 30px;
+}
+            .tarjeta h2 {
+                margin-top: 15px;
+                margin-bottom: 18px;
+            }
+            header h1 {
+                font-size: 60px;
+                position: relative;
+                bottom: 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="blanco">
+
+        <header><h1>INVENTARIO</h1></header>
+        <section class="inventario">
+            <article class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600"
+                     alt="Material médico">
+                <h2>Medicamentos para cortaduras</h2>
+            <button onclick="verMaterial('Material médico 1')">VER MATERIAL
+                </button>
+            </article>
+            <article class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=600"
+                     alt="Instrumentos médicos">
+                <h2>Medicamentos para cortaduras</h2>
+                <button onclick="verMaterial('Material médico 2')">VER MATERIAL</button>
+            </article>
+            <article class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=600"
+                     alt="Material de primeros auxilios">
+                <h2>Medicamentos para cortaduras</h2>
+                <button onclick="verMaterial('Material médico 3')">VER MATERIAL</button>
+            </article>
+        </section>
+    </main>
+    <script>
+        function verMaterial(material) {
+            alert("Has seleccionado: " + material);
+        }
+    </script>
+</body>
+</html>
