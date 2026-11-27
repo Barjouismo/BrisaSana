@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propuesta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-    
+        /*HEADER*/
+            header{            
+            grid-area: cero;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 30px;
+        }
 
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border: 2px solid rgb(209 48 77);
+            background-color: rgb(255, 255, 255);
+            padding-right: 25px;
+            padding-left: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 60px;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+
+        a{
+            background-color: rgb(255, 255, 255);
+            border-radius: 60px;
+            border: 2px solid rgb(209 48 77);
+            padding:15px;
+            color: rgb(209 48 77);
+            text-decoration: none;
+            width: 150px;
+            font-size: 25px;
+            justify-content: center;
+            justify-items: center;
+            font-family: 'Passion One', sans-serif;
+            text-align: center;
+        }
+
+
+        a:hover{
+            background-color: rgb(209 48 77);
+            color: rgb(255, 255, 255);
+            size: 10px;
+            transform: scale(1.1);
+            position: relative;
+            bottom: 5px;
+            transition: 0.3s;
+        }
+
+
+        /*BODY*/
         body {
             margin: 0;
             display: flex;
@@ -53,12 +107,12 @@
             margin-left: 60px;
         }
     #kk1{
-       position: relative;
-       bottom: 800px;
-       left: 1200px;
+        position: relative;
+        bottom: 830px;
+        left: 1200px;
         width: 400px;
-    height: 400px;
-    border-radius: 360px;
+        height: 400px;
+        border-radius: 360px;
     }
 
 #kk2{
@@ -132,6 +186,16 @@ footer {
     </style>
 </head>
 
+    <header>
+        <nav class="uno">
+            <a href="Inicio.html">Inicio</a>
+            <a href="MisionYVision.html">Misión y Visión</a>
+            <a href="SobreNosotros.html">Nosotros</a>
+            <a href=".html">Equipamiento</a>
+            <a href="contactanos.html">Contactanos</a>
+        </nav>
+    </header>
+
 <body>
     <main class="marco">
         <section class="contenido">
@@ -147,8 +211,8 @@ footer {
                 </p>
             </div>
            
-            <img id="kk2"src="enf1.jpg">
-            <img  id="kk1"src="enferm.jpg">
+            <img id="kk2"src="img/enf1.jpg">
+            <img  id="kk1"src="img/enferm.jpg">
             </div>
         </section>
     </main>

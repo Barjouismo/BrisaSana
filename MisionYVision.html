@@ -19,7 +19,7 @@
             align-items: center;
             align-content: center;
             grid-area: uno;
-            background-color:#ffffff;
+
         }
         
         nav{
@@ -73,9 +73,14 @@
     left:90px;
     top:20px;
     border-radius:40px;
-
-    
  }
+
+#Mision:hover{
+    transform: rotate(-5deg);
+    transition: 0.3s;
+}
+
+
  #Vision{
     width:800px;
     height:680px;
@@ -85,12 +90,19 @@
     top:120px;
     border-radius: 40px;
  }
+
+#Vision:hover{
+        transform: rotate(-5deg);
+    transition: 0.3s;
+}
+
  .tres{
     grid-area: tres;
  background-color: #ffffff;
  }
 
  body{
+    background: white;
     display: grid;
     grid-template-rows: 100px 350px 100px ;
     grid-template-columns: 50% 50%;
@@ -109,27 +121,29 @@
   #V{
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-size:20ex;
-   color:#ffffff;
+   color:#ffffff;   
    padding-left:60px;
    margin-top:40px;
   }
   .pe{
    font-family:"Gravitas One", serif;
-   font-size:13mm;
+   font-size:40px;
    color:#ffffff;
-   padding-left:15px;
-   padding-top:1px;
+   padding: 20px;
+   padding-left: 50px;
    position:relative;
-   bottom:20px;
+   bottom:110px;
   }
   .parrafo{
    font-family: "Gravitas One", serif;
-   font-size:13mm;
+   font-size:40px;
    color:#ffffff;
    padding-left:20px;
    position:relative;
-   bottom:100px;
+   bottom:140px;
   }
+
+  /*FOOTER*/
   footer{
             background-color: rgb(209 48 77);
             font-family: "DM Serif Display", serif;
